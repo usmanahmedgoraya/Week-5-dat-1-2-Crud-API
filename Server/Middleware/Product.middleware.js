@@ -21,5 +21,5 @@ const updateProduct = [
 
 module.exports = {
     CreateProduct,
-    updateProduct,data
+    updateProduct
 }
