@@ -28,7 +28,7 @@ router.get('/get-all-product', async (req, res) => {
     if (!product || product.length === 0) {
       return res.status(404).json({ message: 'Products not found' });
     }
-    res.status(200).json({ product});
+    res.status(200).json({ product });
   } catch (error) {
     res.status(500).json({ message: 'Error getting products', error: error.message });
   }

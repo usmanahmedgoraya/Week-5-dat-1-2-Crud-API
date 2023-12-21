@@ -27,7 +27,12 @@ app.use((req, res, next) => {
 });
   
 app.get("/",(req,res)=>{
-  res.status(200).json({message:"success"})
+  res.status(200).json({
+    create_product : "https://week-5-dat-1-2-crud-api.vercel.app/api/create-product",
+    Get_all_product:"https://week-5-dat-1-2-crud-api.vercel.app/api/get-all-product",
+    update_product:"https://week-5-dat-1-2-crud-api.vercel.app/update_product/:id",
+    delete_Product:"https://week-5-dat-1-2-crud-api.vercel.app/api/delete-product/:id"
+  })
 })
 app.use("/api",ProductsRoute);
 
