@@ -2,8 +2,8 @@ const express = require('express');
 const cors = require('cors');
 const app = express();
 require('./db/connectdb')
-const ProductsRoute = require('./Routers/Products.route')
-const UserRoute = require('./Routers/User.route')
+const ProductsRoute = require('./Routers/Products.route');
+const UserRoute = require('./Routers/user.route');
 
 
 // * Connecting To Port
