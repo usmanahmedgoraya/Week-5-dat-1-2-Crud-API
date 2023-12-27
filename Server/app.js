@@ -28,7 +28,18 @@ app.use((req, res, next) => {
 });
 
 app.get("/", (req, res) => {
-  res.status(200).json({ message: "success" })
+  res.status(200).json({
+    msg: "Product API Endpoint",
+    create_product: "http://localhost:3000/api/add-product",
+    get_Products: "http://localhost:3000/api/get-all-product",
+    update_Products: "http://localhost:3000/api/update-product/:id",
+    update_Products: "http://localhost:3000/api/delete-product/:id",
+    msg_2: "User API Endpoint",
+    register: "http://localhost:3000/api/auth/register",
+    activateUser: "http://localhost:3000/api/auth/activate-user",
+    login: "http://localhost:3000/api/auth/login",
+    signIn: "http://localhost:3000/api/auth/sign-in"
+  })
 })
 app.use("/api", ProductsRoute);
 app.use("/api/auth", UserRoute);
