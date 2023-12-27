@@ -22,7 +22,7 @@ const Signup = () => {
     }
 
     const handleSubmit = async () => {
-        const res = await fetch('http://localhost:3000/api/auth/register', {
+        const res = await fetch('https://week-5-dat-1-2-crud-api.vercel.app/api/auth/register', {
             method: "post",
             headers: {
                 "content-type": "application/json"
