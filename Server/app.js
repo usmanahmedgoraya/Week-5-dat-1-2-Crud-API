@@ -14,7 +14,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }))
 
 app.use(cors({
-  origin: ["http://localhost:5173","https://week-5-day-1-to-5-front-end-crud.vercel.app/login"]
+  origin: "https://week-5-day-1-to-5-front-end-crud.vercel.app"
 }));
 
 
